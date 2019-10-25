@@ -1,11 +1,13 @@
 public class homeWorkOne {
     public static void main(String[] args) {
         int n = 2;
-        String word = "adsd";
+        String word = "PAAP";
         System.out.println("El resultado es: " + largestNumber(n));
         int year = 1790;
         System.out.println("el centenario es: " + centuryFromYear(year));
-        if (checkPalindrome(word) == true) {
+
+        /* this part is for check that the word is Palimbrome*/
+        if (word.equals(invertirPalabra(word))) {
             System.out.println("La Palabra " + word + " ...es Palindrome");
         } else {
             System.out.println("La Palabra " + word + " ...No es Palindrome");
@@ -19,7 +21,6 @@ public class homeWorkOne {
 
     public static int centuryFromYear(int year) {
         return ((year - 1) / 100) + 1;
-
     }
 
     public static String invertirPalabra(String word) {
@@ -28,9 +29,5 @@ public class homeWorkOne {
             aux = aux + word.charAt(i);
         }
         return aux;
-    }
-
-    public static boolean checkPalindrome(String word) {
-        return word.equals(invertirPalabra(word));
     }
 }
