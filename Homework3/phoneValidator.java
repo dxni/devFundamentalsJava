@@ -5,9 +5,10 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class RegularExpresion {  
+public class phoneValidator {  
     public static void main(String[] args) {
-        Pattern passwPattern= Pattern.compile("(\\(?\\d{2,4}\\)?[-.\\s]?\\d{2,4}[-.\\s]?\\d{7})|(\\(?\\d{2,4}\\)?[-.\\s]?\\d{2,4}+[-.\\s]?\\d{3}?[-.\\s]?\\d{4})|(\\(?\\d{2,4}\\)?[-.\\s]?\\d{1}[-.\\s]?\\d{3}?[-.\\s]?\\d{4})");
+        /*the new fix */
+        Pattern passwPattern= Pattern.compile("^\\d{2,4}\\s\\d{2,4}\\s\\d{7}$|^\\d{2,4}-\\d{2,4}-\\d{3}-\\d{4}$|^\\d{2,4}.\\d{2,4}.\\d{3}.\\d{4}$|^\\(?\\d{4}\\)\\s\\d{2,4}\\s\\d{7}$|^\\(?\\d{4}\\)\\d{9}?|^\\d{13}$");
         while(true){
             
             String numberP = System.console().readLine("Enter the phone: ");
