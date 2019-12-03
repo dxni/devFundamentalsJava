@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BankProgram",
+            "request": "launch",
+            "mainClass": "org.jalasoft.BankProgram",
+            "projectName": "BankingSystem"
+        }
+    ]
+}
