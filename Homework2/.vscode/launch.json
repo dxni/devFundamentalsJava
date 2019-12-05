@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MismatchExercise",
+            "request": "launch",
+            "mainClass": "MismatchExercise",
+            "projectName": "Homework2_f96dafd6"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - excercise2",
+            "request": "launch",
+            "mainClass": "excercise2",
+            "projectName": "Homework2_f96dafd6"
+        }
+    ]
+}
